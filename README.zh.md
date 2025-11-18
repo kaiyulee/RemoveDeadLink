@@ -2,6 +2,8 @@
 
 扫描全部书签，检测死链并一键清理。支持检测 HTTP 错误、超时、域名到期或不存在，提供白名单。
 
+![界面截图](screenshots/remove-dead-link-screenshot.jpg)
+
 ## 使用
 - 在 Chrome 打开 `chrome://extensions`，开启“开发者模式”→“加载已解压的扩展程序”→选择仓库根目录
 - 点击扩展图标打开弹窗，点击 Scan 扫描并查看结果
