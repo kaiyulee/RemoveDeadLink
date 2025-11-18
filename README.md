@@ -2,6 +2,8 @@
 
 Scan bookmarks for dead links and clean with one click. Detects HTTP errors, timeouts, expired or missing domains. Whitelist.
 
+中文文档：参见 [README.zh.md](./README.zh.md)
+
 ## Development
 - Load unpacked in Chrome: `chrome://extensions` → Enable Developer Mode → Load unpacked → pick repo root
 - Click the extension icon to open the popup and run a scan
