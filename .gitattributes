@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+# Treat common web assets as text
+*.html text
+*.css text
+*.js text
+*.json text
+*.md text
+
+# Keep png/jpg as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg text

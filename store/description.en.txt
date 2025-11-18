@@ -1,0 +1,28 @@
+Title: Bookmark Dead Link Cleaner
+
+Short description:
+Scan bookmarks for dead links and clean them with one click.
+
+Full description:
+Keep your bookmarks tidy. This extension scans your entire bookmarks tree, detects unreachable links and helps you remove them effortlessly.
+
+What it detects:
+- HTTP errors (>= 400)
+- Timeouts and network failures
+- Expired domains (via RDAP)
+- Non-existent domains (NXDOMAIN via DNS over HTTPS)
+- Local domains (localhost/private networks)
+
+Features:
+- One-click scan with real-time progress
+- Clear reason tags (Expired, NXDOMAIN, Local, Timeout, HTTP Error)
+- Remove individually or in bulk
+- Whitelist domains (exact or suffix match)
+- Configurable timeout and concurrency
+- Bilingual UI (English/Chinese)
+
+Privacy:
+- No personal data collection. Network requests are only used to check bookmark URLs and domain status.
+
+Support:
+- Report issues or request features via the support email or repository.

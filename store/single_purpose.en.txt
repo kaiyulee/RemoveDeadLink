@@ -1,0 +1,1 @@
+Detect dead bookmarks and help the user remove them. Nothing else.

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy - Bookmark Dead Link Cleaner</title>
+    <style>
+      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:880px;margin:40px auto;padding:0 16px;line-height:1.6;color:#111}
+      h1{font-size:28px;margin:0 0 16px}
+      h2{font-size:20px;margin:24px 0 8px}
+      code{background:#f5f5f5;padding:2px 6px;border-radius:4px}
+      small{color:#666}
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy</h1>
+    <small>Last updated: 2025‑11‑17</small>
+    <h2>What this extension does</h2>
+    <p>Bookmark Dead Link Cleaner scans your bookmarks to find dead links and helps you remove them.</p>
+    <h2>Data collection</h2>
+    <ul>
+      <li>No personal data is collected, transmitted, or sold.</li>
+      <li>All processing happens locally in your browser.</li>
+    </ul>
+    <h2>Data the extension handles</h2>
+    <ul>
+      <li><strong>Bookmarks</strong>: The bookmarks tree is read to check URLs and, only on your explicit action, selected bookmarks can be removed.</li>
+      <li><strong>Network checks</strong>: To verify reachability, the extension issues <code>HEAD/GET</code> requests to the bookmarked URLs you scan.</li>
+      <li><strong>Domain status</strong>: Public RDAP and DNS‑over‑HTTPS (DoH) endpoints are queried to detect expired or non‑existent domains.</li>
+      <li><strong>Local storage</strong>: Settings (timeout, concurrency, language, whitelist) and the latest scan results are stored locally with <code>chrome.storage.local</code>.</li>
+    </ul>
+    <h2>How data is used</h2>
+    <ul>
+      <li>Bookmarks and network responses are used only to determine whether a link is dead and to present results for your review.</li>
+      <li>Stored settings and last results exist solely to improve your experience and can be cleared anytime by removing the extension or clearing site data.</li>
+    </ul>
+    <h2>Sharing and third parties</h2>
+    <p>No analytics, advertising, or tracking services are used. The extension does not share personal data with any party. Network requests are limited to:</p>
+    <ul>
+      <li>Bookmarked sites you choose to scan (HEAD/GET).</li>
+      <li>Public RDAP endpoints (e.g., <code>https://rdap.org/</code>) to check domain status/expiration.</li>
+      <li>DNS‑over‑HTTPS endpoint <code>https://dns.google/resolve</code> to detect NXDOMAIN.</li>
+    </ul>
+    <p>Returned content is not executed. No remote code is downloaded or run.</p>
+    <h2>Permissions</h2>
+    <ul>
+      <li><code>bookmarks</code>: Read bookmarks and remove selected items on your command.</li>
+      <li><code>storage</code>: Save user settings and the last scan result locally.</li>
+      <li><code>&lt;all_urls&gt;</code>: Issue requests to bookmarked URLs to verify reachability.</li>
+    </ul>
+    <h2>Data retention & deletion</h2>
+    <ul>
+      <li>All data remains on your device. No server‑side storage.</li>
+      <li>Remove the extension or clear browser storage to delete saved settings/results.</li>
+    </ul>
+    <h2>Contact</h2>
+    <p>Questions or requests: <a href="mailto:you@example.com">you@example.com</a></p>
+  </body>
+  </html>

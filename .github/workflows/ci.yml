@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate manifest.json format
+        run: |
+          python -m json.tool manifest.json > /dev/null
+      - name: Basic manifest fields check
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq
+          jq -e '.manifest_version==3 and (.name|length>0) and (.version|length>0) and (.action.default_popup|length>0)' manifest.json
+      - name: Pack extension
+        run: |
+          zip -r RemoveDeadLink.zip manifest.json background.js ui _locales store icons
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RemoveDeadLink.zip
+          path: RemoveDeadLink.zip

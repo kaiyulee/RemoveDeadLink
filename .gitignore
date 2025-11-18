@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+
+# Editors/IDE
+.idea/
+.vscode/
+
+# Archives
+RemoveDeadLink.zip
+
+# Logs
+*.log
+
+# Misc build artifacts
+store/screenshots/**/*.tmp
+store/screenshots/**/*.bak

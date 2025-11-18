@@ -1,0 +1,6 @@
+v0.1.0
+- Initial release
+- Scan bookmarks for dead links with concurrency and timeout
+- Classify reasons: HTTP error, Timeout, Network error, Local domain, Domain not found, Expired domain
+- Whitelist support and bulk removal
+- English/Chinese UI

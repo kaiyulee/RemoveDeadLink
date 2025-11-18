@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>书签死链清理器</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="titleText">书签死链清理器</h1>
+      <div class="controls">
+        <button id="scanBtn">开始扫描</button>
+        <button id="removeAllBtn" disabled>移除全部死链</button>
+      </div>
+      <div class="progress">
+        <div id="progressText">未开始</div>
+        <div class="bar"><div id="barFill"></div></div>
+      </div>
+      <div id="nowScanning" class="now-scanning" style="display:none">
+        <img id="nowFavicon" class="fav" alt="favicon" />
+        <div id="nowTitle" class="now-title"></div>
+      </div>
+      <div class="summary" id="summaryText"></div>
+      <div class="settings">
+        <div class="row">
+          <label id="timeoutLabel" for="timeoutInput">请求超时(ms)</label>
+          <input id="timeoutInput" type="number" min="1000" step="500" value="8000" />
+        </div>
+        <div class="row">
+          <label id="concurrencyLabel" for="concurrencyInput">并发数</label>
+          <input id="concurrencyInput" type="number" min="1" max="32" step="1" value="10" />
+        </div>
+        <div class="row">
+          <label id="langLabel" for="langSelect">语言</label>
+          <select id="langSelect">
+            <option value="zh">中文</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <button id="saveCfgBtn">保存设置</button>
+        <div id="whitelistHeading" class="row heading">白名单</div>
+        <div class="row">
+          <input id="whitelistInput" type="text" placeholder="例如: localhost 或 .example.com" />
+          <button id="addWhitelistBtn">添加</button>
+        </div>
+        <ul id="whitelistList" class="whitelist"></ul>
+      </div>
+      <ul id="deadList" class="list"></ul>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+  </html>

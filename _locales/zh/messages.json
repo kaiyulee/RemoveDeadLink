@@ -1,0 +1,6 @@
+{
+  "extName": { "message": "Bookmark Dead Link Cleaner" },
+  "extShort": { "message": "DeadLink Cleaner" },
+  "extDesc": { "message": "Scan bookmarks for dead links and clean with one click. HTTP errors, timeouts, expired or missing domains. Whitelist." },
+  "actionTitle": { "message": "DeadLink Cleaner" }
+}
